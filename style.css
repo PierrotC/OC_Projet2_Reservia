@@ -21,6 +21,7 @@ nav
 {
     display: flex;
     padding-bottom: 30px;
+    margin-top: 12px;
 }
 
 input[type="submit"]
@@ -66,6 +67,11 @@ label .fas
 #logo_reservia
 {
     padding-top: 50px;
+}
+
+#connexion, #liens_nav
+{
+    margin: auto;
 }
 
 .lien_nav a:hover
@@ -173,11 +179,6 @@ a:visited
     color: #0065FC;
 }
 
-.lien_nav
-{
-    text-align: center;
-}
-
 nav :first-child
 {
     flex-basis: 80%;
@@ -236,11 +237,17 @@ article h2
     margin-bottom: 35px;
     background-color: white;
     padding-bottom: 5px;
+    height: 200px;
 }
 
 .hebergement .nom, .hebergement .prix, .hebergement .note
 {
     padding: 3px 10px;
+}
+
+.prix
+{
+    font-size: 0.9em;
 }
 
 a
@@ -287,7 +294,7 @@ aside h2
 
 .txt_populaire
 {
-    padding: 10px 30px 10px 10px;
+    padding: 10px 30px 10px 20px;
 }
 
 .nom
@@ -300,6 +307,11 @@ aside h2
 {
     font-size: 0.8em;
     letter-spacing: -1px;
+}
+
+#populaires .note
+{
+    margin-top: 45px;
 }
 
 .e_bleu
@@ -316,6 +328,68 @@ aside h2
 {
     flex-basis: 100%;
     font-weight: 700;
+    margin-right: 100px;
+}
+
+#section_activites
+{
+    height: 650px;
+    margin-top: 70px;
+}
+
+#activites
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.activite img
+{
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+
+.activite .nom
+{
+    padding: 3px 10px;
+}
+
+.activite
+{
+    box-shadow: 5px 5px 5px rgb(234,234,234);
+    border-radius: 20px;
+    background-color: white;
+    margin: 0px 30px 35px 0px;
+}
+
+.moyennes
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#port img, #calanques img
+{
+    height: 450px;
+}
+
+#pomegues img
+{
+    height: 200px;
+}
+
+#frioul img
+{
+    height: 150px;
+}
+
+#garde img, #longchamp img
+{
+    height: 190px;
 }
 
 /* ########## Fin main ########## */
