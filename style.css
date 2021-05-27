@@ -33,6 +33,7 @@ input[type="submit"]
     border-bottom-right-radius: 15px;
     margin-left: -5px;
     height: 51px;
+    cursor: pointer;
 }
 
 input
@@ -161,12 +162,15 @@ a:visited
     border: 2px #D9d9d9 solid;
     border-radius: 30px;
     font-size: 1.2em;
+    cursor: pointer;
+    transition: .5s ease;
 }
 
 .filtre .fas
 {
     color: #0065FC;
     line-height: 1.5;
+    background-color: #DEEBFF;
 }
 
 .filtre:hover
