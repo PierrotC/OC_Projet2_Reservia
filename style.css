@@ -21,7 +21,7 @@ nav
 {
     display: flex;
     padding-bottom: 30px;
-    margin-top: 12px;
+    margin-top: 37px;
 }
 
 input[type="submit"]
@@ -67,7 +67,7 @@ label .fas
 
 #logo_reservia
 {
-    padding-top: 50px;
+    width: 100px;
 }
 
 #connexion, #liens_nav
@@ -103,11 +103,6 @@ a:visited
 {
     font-weight: bold;
     color: #0065FC;
-}
-
-#logo_reservia
-{
-    width: 100px;
 }
 
 #bloc_info
@@ -164,6 +159,7 @@ a:visited
     font-size: 1.2em;
     cursor: pointer;
     transition: .5s ease;
+    margin-bottom: 20px;
 }
 
 .filtre .fas
@@ -192,7 +188,7 @@ nav :first-child
 
 /* ########## main ########## */
 
-#section_hebergements
+#hebergements
 {
     display: flex;
     justify-content: space-between;
@@ -335,13 +331,13 @@ aside h2
     margin-right: 100px;
 }
 
-#section_activites
+#activites
 {
-    height: 650px;
     margin-top: 70px;
+    margin-bottom: 50px;
 }
 
-#activites
+#galerie_activites
 {
     display: flex;
     justify-content: space-between;
@@ -358,7 +354,7 @@ aside h2
 
 .activite .nom
 {
-    padding: 3px 10px;
+    padding: 3px 20px;
 }
 
 .activite
@@ -403,7 +399,7 @@ aside h2
 footer
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: #f2f2f2;
     padding: 20px 40px;
     margin: 0px;
@@ -413,6 +409,7 @@ ul
 {
     justify-content: space-between;
     list-style-type: none;
+    margin-right: 210px;
 }
 
 ul > :first-child
