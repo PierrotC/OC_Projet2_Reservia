@@ -297,7 +297,7 @@ aside h2
     padding: 10px 30px 10px 20px;
 }
 
-.nom
+.populaire .nom
 {
     font-weight: 700;
     margin-top: 5px;
@@ -337,6 +337,19 @@ aside h2
     margin-bottom: 50px;
 }
 
+#galerie_activites > *
+{
+    overflow: hidden;
+    flex-basis: 23%;
+    max-height: 500px;
+    min-width: 251px;
+}
+
+.moyennes > *
+{
+    overflow: hidden;
+}
+
 #galerie_activites
 {
     display: flex;
@@ -346,24 +359,40 @@ aside h2
 
 .activite img
 {
-    width: 320px;
+    /* width: 320px; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
+    flex-grow: 1;
+    min-height: 0px;
 }
 
-.activite .nom
+/* .activite .nom
 {
     padding: 3px 20px;
-}
+} */
 
 .activite
 {
     box-shadow: 5px 5px 5px rgb(234,234,234);
     border-radius: 20px;
     background-color: white;
-    margin: 0px 30px 35px 0px;
+    /* margin: 0px 30px 35px 0px; */
+    display: flex;
+    flex-direction: column;
 }
+
+/* #galerie_activites > .activite
+{
+    max-height: 800px;
+} */
+
+.activite .nom
+{
+    padding: 15px;
+    font-weight: 700;
+}
+
 
 .moyennes
 {
@@ -372,25 +401,36 @@ aside h2
     justify-content: space-between;
 }
 
-#port img, #calanques img
+/* #port img, #calanques img
 {
     height: 450px;
+} */
+
+#pomegues
+{
+    flex-basis: 55%;
 }
 
-#pomegues img
+/* #pomegues img
 {
     height: 200px;
+} */
+
+#frioul
+{
+    flex-basis: 35%;
 }
 
 #frioul img
 {
-    height: 150px;
+    /* height: 150px; */
+    object-position: top;
 }
 
-#garde img, #longchamp img
+/* #garde img, #longchamp img
 {
     height: 190px;
-}
+} */
 
 /* ########## Fin main ########## */
 
@@ -409,7 +449,8 @@ ul
 {
     justify-content: space-between;
     list-style-type: none;
-    margin-right: 210px;
+    flex-basis: 30%;
+    /* margin-right: 210px; */
 }
 
 ul > :first-child
@@ -424,3 +465,4 @@ footer li
 }
 
 /* ########## Fin footer ########## */
+
