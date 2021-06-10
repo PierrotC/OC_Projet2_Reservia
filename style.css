@@ -1,7 +1,10 @@
-body    
+body
 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    margin: 0px;
+    max-width: 1600px;
+    min-width: 450px;
 }
 
 header, main
@@ -20,8 +23,6 @@ h1
 nav
 {
     display: flex;
-    padding-bottom: 30px;
-    margin-top: 37px;
 }
 
 input[type="submit"]
@@ -65,9 +66,21 @@ label .fas
     display: flex;
 }
 
+.lien_nav, #connexion
+{
+    padding: 50px 30px;
+}
+
 #logo_reservia
 {
     width: 100px;
+}
+
+#conteneur_logo
+{
+    flex-basis: 80%;
+    display: flex;
+    align-items: center;
 }
 
 #connexion, #liens_nav
@@ -75,10 +88,13 @@ label .fas
     margin: auto;
 }
 
+.lien_nav:hover
+{
+    border-top: 3px #0065FC solid;
+}
 .lien_nav a:hover
 {
     color: #0065FC;
-    border-top: 3px #0065FC solid;
 }
 
 #connexion a:hover
@@ -91,7 +107,7 @@ nav a
 {
     color: black;
     text-decoration: none;
-    padding: 50px 30px 0px 30px;
+    
 }
 
 a:visited
@@ -179,11 +195,6 @@ a:visited
     color: #0065FC;
 }
 
-nav :first-child
-{
-    flex-basis: 80%;
-}
-
 /* ########### Fin header ###############*/
 
 /* ########## main ########## */
@@ -234,7 +245,7 @@ article h2
     border: 5px white solid;
     box-shadow: 5px 5px 5px rgb(234,234,234);
     border-radius: 20px;
-    margin-bottom: 35px;
+    margin: 15px 5px;
     background-color: white;
     padding-bottom: 5px;
     height: 200px;
@@ -275,7 +286,7 @@ a
     box-shadow: 5px 5px 5px rgb(234,234,234);
     border-radius: 20px;
     background-color: white;
-    margin-bottom: 35px;
+    margin: 35px 0px;
     height: 140px;
     width: 340px;
 }
@@ -343,6 +354,7 @@ aside h2
     flex-basis: 23%;
     max-height: 500px;
     min-width: 251px;
+    margin: 0px 5px;
 }
 
 .moyennes > *
@@ -367,17 +379,11 @@ aside h2
     min-height: 0px;
 }
 
-/* .activite .nom
-{
-    padding: 3px 20px;
-} */
-
 .activite
 {
     box-shadow: 5px 5px 5px rgb(234,234,234);
     border-radius: 20px;
     background-color: white;
-    /* margin: 0px 30px 35px 0px; */
     display: flex;
     flex-direction: column;
 }
@@ -393,7 +399,6 @@ aside h2
     font-weight: 700;
 }
 
-
 .moyennes
 {
     display: flex;
@@ -401,20 +406,20 @@ aside h2
     justify-content: space-between;
 }
 
-/* #port img, #calanques img
+#port img, #calanques img
 {
     height: 450px;
-} */
+}
 
 #pomegues
 {
     flex-basis: 55%;
 }
 
-/* #pomegues img
+#pomegues img
 {
     height: 200px;
-} */
+}
 
 #frioul
 {
@@ -423,14 +428,14 @@ aside h2
 
 #frioul img
 {
-    /* height: 150px; */
+    height: 150px;
     object-position: top;
 }
 
-/* #garde img, #longchamp img
+#garde img, #longchamp img
 {
     height: 190px;
-} */
+}
 
 /* ########## Fin main ########## */
 
@@ -466,3 +471,31 @@ footer li
 
 /* ########## Fin footer ########## */
 
+@media (max-width: 1210px)
+{
+    #hebergements
+    {
+        flex-wrap: wrap-reverse;
+    }
+
+    aside
+    {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1170px) and (min-width: 946px)
+{
+    #galerie_activites > *
+    {
+        margin: 0px 75px;
+    }
+}
+
+@media (max-width: 945px)
+{
+    #galerie_activites > *
+    {
+        margin: 0px 50px;
+    }
+}
