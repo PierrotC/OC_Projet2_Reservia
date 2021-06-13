@@ -3,8 +3,8 @@ body
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     margin: 0px;
-    max-width: 1600px;
-    min-width: 450px;
+    max-width: 1500px;
+    min-width: 375px;
 }
 
 header, main
@@ -18,6 +18,7 @@ h1
 {
     font-size : 1.5em;
     margin-bottom: 0.5em;
+    margin-top: 30px;
 }
 
 nav
@@ -47,6 +48,11 @@ input
     padding: 15px;
 }
 
+#valider_loupe
+{
+    display: none;
+}
+
 label
 {
     background-color: #f2f2f2;
@@ -69,6 +75,7 @@ label .fas
 .lien_nav, #connexion
 {
     padding: 50px 30px;
+    border-top: 3px rgba(0, 0, 0, 0) solid;
 }
 
 #logo_reservia
@@ -93,7 +100,6 @@ label .fas
 {
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    color: #0065FC;
 }
 
 nav a
@@ -107,7 +113,7 @@ a:visited
     color: black;
 }
 
-#connexion a
+#connexion
 {
     font-weight: bold;
     color: #0065FC;
@@ -137,7 +143,7 @@ a:visited
 
 #filtres > *
 {
-    margin-right: 25px;
+    margin: 5px 10px;
     font-weight: 700;
 }
 
@@ -191,7 +197,7 @@ a:visited
 
 /* ########## main ########## */
 
-#hebergements
+#galerie_hebergements
 {
     display: flex;
     justify-content: space-between;
@@ -224,15 +230,14 @@ article h2
     flex-basis: 100%;
 }
 
-.hebergement img
+.carte_hebergement img
 {
     width: 240px;
-    align-self: stretch;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
-.hebergement
+.carte_hebergement
 {
     border: 5px white solid;
     box-shadow: 5px 5px 5px rgb(234,234,234);
@@ -243,7 +248,7 @@ article h2
     height: 200px;
 }
 
-.hebergement .nom, .hebergement .prix, .hebergement .note
+.carte_hebergement .nom, .carte_hebergement .prix, .carte_hebergement .note
 {
     padding: 3px 10px;
 }
@@ -348,16 +353,10 @@ aside h2
 
 #galerie_activites > *
 {
-    overflow: hidden;
     flex-basis: 23%;
     max-height: 500px;
     min-width: 251px;
     margin: 0px 5px;
-}
-
-.moyennes > *
-{
-    overflow: hidden;
 }
 
 #galerie_activites
@@ -369,12 +368,9 @@ aside h2
 
 .activite img
 {
-    /* width: 320px; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
-    flex-grow: 1;
-    min-height: 0px;
 }
 
 .activite
@@ -385,11 +381,6 @@ aside h2
     display: flex;
     flex-direction: column;
 }
-
-/* #galerie_activites > .activite
-{
-    max-height: 800px;
-} */
 
 .activite .nom
 {
@@ -409,19 +400,9 @@ aside h2
     height: 450px;
 }
 
-#pomegues
-{
-    flex-basis: 55%;
-}
-
 #pomegues img
 {
-    height: 200px;
-}
-
-#frioul
-{
-    flex-basis: 35%;
+    height: 220px;
 }
 
 #frioul img
@@ -432,7 +413,7 @@ aside h2
 
 #garde img, #longchamp img
 {
-    height: 190px;
+    height: 180px;
 }
 
 /* ########## Fin main ########## */
@@ -472,7 +453,7 @@ footer li
 
 @media (max-width: 1210px) /* populaires passe au dessus d'hébergements */
 {
-    #hebergements
+    #galerie_hebergements
     {
         flex-wrap: wrap-reverse;
         justify-content: center;
@@ -501,6 +482,50 @@ footer li
     {
         margin: 15px;
     }
+
+    nav
+    {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #conteneur_logo
+    {
+        flex-basis: auto;
+    }
+
+    #liens_nav
+    {
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    .lien_nav
+    {
+        padding: 15px 0px;
+        border-bottom: 3px #DEEBFF solid;
+        border-top: none;
+    }
+
+    #liens_nav a
+    {
+        flex-basis: 50%;
+        text-align: center;
+    }
+
+    .lien_nav:hover
+    {
+        border-bottom: 3px #0065FC solid;
+        border-top: none;
+    }
+}
+
+@media (max-width:1100px) /* "Filtres" au-dessus */
+{
+    #titre_filtres
+    {
+        flex-basis: 100%;
+    }
 }
 
 @media (max-width: 1170px) and (min-width: 946px)
@@ -525,6 +550,40 @@ footer li
     {
         flex-direction: column;
         align-items: center;
+    }
+
+    header, main
+    {
+        margin: 0px;
+    }
+
+    nav ~ *
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #conteneur_logo
+    {
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 565px)
+{
+    footer
+    {
+        flex-direction: column;
+    }
+
+    #valider_texte
+    {
+        display: none;
+    }
+
+    #valider_loupe
+    {
+        display: inline-block;
     }
 }
 
