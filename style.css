@@ -210,6 +210,11 @@ aside, article
     padding: 20px 40px;
 }
 
+h2
+{
+    font-size: xx-large;
+}
+
 article
 {
     display: flex;
