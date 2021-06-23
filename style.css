@@ -248,6 +248,11 @@ article h2
     height: 200px;
 }
 
+.carte_hebergement .nom
+{
+    font-weight: 700;
+}
+
 .carte_hebergement .nom, .carte_hebergement .prix, .carte_hebergement .note
 {
     padding: 3px 10px;
