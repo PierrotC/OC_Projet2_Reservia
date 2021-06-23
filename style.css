@@ -4,6 +4,7 @@ body
     font-weight: 500;
     margin: 0px;
     min-width: 375px;
+    max-width: 1600px;
 }
 
 header, main
@@ -208,11 +209,6 @@ aside, article
     flex-wrap: wrap;
     border-radius: 20px;
     padding: 20px 40px;
-}
-
-h2
-{
-    font-size: xx-large;
 }
 
 article
@@ -459,6 +455,17 @@ footer li
 /* ########## Fin footer ########## */
 
 /* ########## Media Queries ####### */
+
+@media (min-width: 1600px) /* grandes résolutions */
+{
+    body
+    {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 1210px) /* populaires passe au dessus d'hébergements */
 {
