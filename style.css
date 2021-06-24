@@ -74,8 +74,18 @@ label .fas
 
 .lien_nav, #connexion
 {
-    padding: 50px 30px;
     border-top: 3px rgba(0, 0, 0, 0) solid;
+    border-bottom: 3px rgba(0, 0, 0, 0) solid;
+}
+
+.lien_nav
+{
+    padding: 50px 30px;
+}
+
+#connexion
+{
+    margin: 50px 30px;
 }
 
 #logo_reservia
@@ -98,8 +108,7 @@ label .fas
 
 #connexion:hover
 {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
+    border-bottom: solid 3px;
 }
 
 nav a
@@ -217,6 +226,7 @@ article
     flex-basis: 70%;
     margin-right: 40px;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 aside
@@ -238,14 +248,11 @@ article h2
 }
 
 .carte_hebergement
-{
-    border: 5px white solid;
+{  
     box-shadow: 5px 5px 5px rgb(234,234,234);
     border-radius: 20px;
     margin: 15px 5px;
-    background-color: white;
-    padding-bottom: 5px;
-    height: 200px;
+    border: 5px white solid;
 }
 
 .carte_hebergement .nom
@@ -255,7 +262,8 @@ article h2
 
 .carte_hebergement .nom, .carte_hebergement .prix, .carte_hebergement .note
 {
-    padding: 3px 10px;
+    padding: 3px 15px;
+    background-color: white;
 }
 
 .prix
@@ -279,12 +287,12 @@ a
     border-bottom-left-radius: 20px;
     height: 100%;
     width: 140px;
+    border: 5px white solid;
 }
 
 .populaire
 {
     display: flex;
-    border: 5px white solid;
     box-shadow: 5px 5px 5px rgb(234,234,234);
     border-radius: 20px;
     background-color: white;
@@ -307,13 +315,17 @@ aside h2
 
 .txt_populaire
 {
-    padding: 10px 30px 10px 20px;
+    padding: 10px 30px 10px 5px;
+    border: 5px rgba(0, 0, 0, 0) solid;
+    height: 120px;
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .populaire .nom
 {
     font-weight: 700;
-    margin-top: 5px;
 }
 
 .note
@@ -555,8 +567,7 @@ footer li
 
     #connexion:active
     {
-        text-decoration: underline;
-        text-decoration-thickness: 3px;
+        border-bottom: solid 3px;
     }
 
     header, main
@@ -744,7 +755,7 @@ footer li
 
     .populaire
     {
-        width: unset;
+        width: 335px;
     }
 
     aside h2
